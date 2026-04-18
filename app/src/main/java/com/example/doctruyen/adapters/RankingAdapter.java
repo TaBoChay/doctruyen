@@ -71,10 +71,17 @@ public class RankingAdapter extends RecyclerView.Adapter<RankingAdapter.RankingV
         holder.ratingBar.setRating(rating);
         holder.tvRating.setText(String.format("%.1f", rating));
 
-        // 4. Glide load ảnh bìa từ assets
-        // Sửa lỗi đường dẫn: Thêm thư mục 'Data/' để phù hợp với cấu trúc assets
+        String coverPath = story.getCoverImagePath();
+        long coverLastModified = 0;
+        if (coverPath != null && coverPath.startsWith("file:")) {
+            coverLastModified = new java.io.File(coverPath.substring(5)).lastModified();
+        }
+        Uri coverUri = (coverPath != null && coverPath.startsWith("file:")) ? 
+                Uri.parse(coverPath) : Uri.parse("file:///android_asset/" + coverPath);
+
         Glide.with(context)
-                .load(Uri.parse("file:///android_asset/" + story.getCoverImagePath()))
+                .load(coverUri)
+                .signature(new com.bumptech.glide.signature.ObjectKey(String.valueOf(coverLastModified)))
                 .placeholder(R.drawable.ic_book_default)
                 .error(R.drawable.ic_book_default)
                 .into(holder.ivCover);

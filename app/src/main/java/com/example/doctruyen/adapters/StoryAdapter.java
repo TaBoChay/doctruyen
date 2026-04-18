@@ -94,14 +94,17 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.StoryViewHol
         holder.tvViews.setText(String.valueOf(story.getViews()));
         holder.tvReviews.setText(String.valueOf(story.getTotalReviews()));
 
-        // 2. Glide load ảnh từ assets (SỬ DỤNG ĐƯỜNG DẪN ĐÃ SỬA: BỎ Data/ lặp lại)
-        String relativePath = story.getCoverImagePath();
-        String fullAssetPath = "file:///android_asset/" + relativePath;
-
-        Log.d("STORY_ADAPTER_GLIDE", "Loading: " + fullAssetPath);
+        String coverPath = story.getCoverImagePath();
+        long coverLastModified = 0;
+        if (coverPath != null && coverPath.startsWith("file:")) {
+            coverLastModified = new java.io.File(coverPath.substring(5)).lastModified();
+        }
+        Uri coverUri = (coverPath != null && coverPath.startsWith("file:")) ? 
+                Uri.parse(coverPath) : Uri.parse("file:///android_asset/" + coverPath);
 
         Glide.with(context)
-                .load(Uri.parse(fullAssetPath))
+                .load(coverUri)
+                .signature(new com.bumptech.glide.signature.ObjectKey(String.valueOf(coverLastModified)))
                 .placeholder(R.drawable.ic_book_default)
                 .error(R.drawable.ic_book_default)
                 .into(holder.ivCover);

@@ -319,9 +319,14 @@ public class AddStoryActivity extends AppCompatActivity {
         String translatorEmail = prefsHelper.getUserEmail();
 
         try {
-            saveToLocalStorage(id, folderName, title, author, category, description, translatorEmail);
+            String finalFolderName = saveToLocalStorage(id, folderName, title, author, category, description, translatorEmail);
             
-            Story newStory = new Story(id, title, author, description, "", "", category, folderName);
+            File storiesDir = new File(getFilesDir(), "Data");
+            File storyFolder = new File(storiesDir, finalFolderName);
+            String coverPath = "file:" + storyFolder.getAbsolutePath() + "/bia.jpg";
+            String bannerPath = "file:" + storyFolder.getAbsolutePath() + "/banner.jpg";
+
+            Story newStory = new Story(id, title, author, description, coverPath, bannerPath, category, finalFolderName);
             newStory.setTranslatorEmail(translatorEmail);
             
             ArrayList<Chapter> chapters = new ArrayList<>();
@@ -333,12 +338,16 @@ public class AddStoryActivity extends AppCompatActivity {
                 if (chapterTitle.isEmpty()) {
                     chapterTitle = "Chương " + (i + 1);
                 }
+                
+                String chapterFileName = "chuong_" + (i + 1) + ".txt";
+                File chapterFile = new File(new File(storyFolder, "Chapters"), chapterFileName);
+                
                 Chapter chapter = new Chapter(
                         id + "_" + (i + 1),
                         id,
                         chapterTitle,
                         i + 1,
-                        ""
+                        "file:" + chapterFile.getAbsolutePath()
                 );
                 chapter.setContent(etContent.getText().toString());
                 chapters.add(chapter);
@@ -356,7 +365,7 @@ public class AddStoryActivity extends AppCompatActivity {
         }
     }
 
-    private void saveToLocalStorage(String storyId, String folderName, String title, String author, 
+    private String saveToLocalStorage(String storyId, String folderName, String title, String author, 
                           String category, String description, String translatorEmail) throws Exception {
         
         File storiesDir = new File(getFilesDir(), "Data");
@@ -430,5 +439,7 @@ public class AddStoryActivity extends AppCompatActivity {
         FileOutputStream metaFos = new FileOutputStream(metaFile);
         metaFos.write(meta.toString().getBytes("UTF-8"));
         metaFos.close();
+        
+        return folderName;
     }
 }

@@ -310,7 +310,10 @@
             android:elevation="4dp"
             app:cornerRadius="20dp"
             android:visibility="gone"
-            android:stateListAnimator="@null"/>
+            android:stateListAnimator="@null"
+            android:drawableStart="@drawable/ic_comment"
+            android:drawablePadding="8dp"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 

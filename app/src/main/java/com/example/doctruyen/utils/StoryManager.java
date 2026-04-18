@@ -47,6 +47,10 @@ public class StoryManager {
         void onStoriesLoaded();
         void onStoriesLoadFailed(String error);
     }
+    
+    public interface CommentCallback {
+        void onCommentsLoaded(List<Comment> comments);
+    }
 
     private StoryManager(Context context) {
         this.context = context.getApplicationContext();
@@ -336,6 +340,31 @@ public class StoryManager {
                 db.commentDao().insertComment(entity);
             });
         }
+    }
+
+    public void addChapterComment(Comment newComment) {
+        executor.execute(() -> {
+            CommentEntity entity = new CommentEntity();
+            entity.id = newComment.getId();
+            entity.storyId = newComment.getStoryId(); // this stores chapterId
+            entity.userId = newComment.getUserId();
+            entity.userName = newComment.getUserName();
+            entity.content = newComment.getContent();
+            entity.timestamp = newComment.getTimestamp();
+            db.commentDao().insertComment(entity);
+        });
+    }
+
+    public void getChapterComments(String chapterId, CommentCallback callback) {
+        executor.execute(() -> {
+            List<CommentEntity> localComments = db.commentDao().getCommentsForStory(chapterId);
+            List<Comment> chapterComments = new ArrayList<>();
+            for (CommentEntity ce : localComments) {
+                Comment c = new Comment(ce.id, ce.storyId, ce.userId, ce.userName, ce.content, ce.timestamp);
+                chapterComments.add(c);
+            }
+            mainHandler.post(() -> callback.onCommentsLoaded(chapterComments));
+        });
     }
 
     /** Tính toán lại Rating trung bình của truyện sau khi có Review mới. */
@@ -769,5 +798,44 @@ public class StoryManager {
             }
         }
         return new ArrayList<>();
+    }
+
+    public boolean deleteLocalStory(String storyId) {
+        Story storyToDelete = null;
+        for (Story story : allStories) {
+            if (story.getId().equals(storyId)) {
+                storyToDelete = story;
+                break;
+            }
+        }
+
+        if (storyToDelete != null && storyToDelete.getFolderName() != null) {
+            try {
+                File storiesDir = new File(context.getFilesDir(), "Data");
+                File storyFolder = new File(storiesDir, storyToDelete.getFolderName());
+
+                if (storyFolder.exists()) {
+                    deleteRecursive(storyFolder);
+                }
+
+                allStories.remove(storyToDelete);
+                return true;
+            } catch (Exception e) {
+                Log.e(TAG, "Error deleting local story: " + e.getMessage());
+            }
+        }
+        return false;
+    }
+
+    private void deleteRecursive(File fileOrDirectory) {
+        if (fileOrDirectory.isDirectory()) {
+            File[] children = fileOrDirectory.listFiles();
+            if (children != null) {
+                for (File child : children) {
+                    deleteRecursive(child);
+                }
+            }
+        }
+        fileOrDirectory.delete();
     }
 }
