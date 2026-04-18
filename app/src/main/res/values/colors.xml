@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFFFFF</color>
+    <color name="background_secondary">#F5F5F5</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="bottom_nav_bg">#FFFFFF</color>
+    <color name="header_bg">#FFFFFF</color>
+    <color name="footer_bg">#FFFFFF</color>
+    <color name="input_bg">#F1F3F4</color>
+    <color name="search_bg">#F1F3F4</color>
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_tertiary">#9E9E9E</color>
+    <color name="text_hint">#BDBDBD</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="button_primary">#1E88E5</color>
+    <color name="button_primary_pressed">#1565C0</color>
+    <color name="button_secondary">#E0E0E0</color>
+    <color name="button_danger">#E53935</color>
+    <color name="button_active">#1565C0</color>
+    <color name="button_inactive">#BDBDBD</color>
+    <color name="button_accent">#1E88E5</color>
+
+    <color name="accent">#1E88E5</color>
+    <color name="accent_light">#64B5F6</color>
+    <color name="accent_dark">#1565C0</color>
+
+    <color name="success">#43A047</color>
+    <color name="warning">#FB8C00</color>
+    <color name="error">#E53935</color>
+    <color name="info">#1E88E5</color>
+
+    <color name="star_filled">#FFD700</color>
+    <color name="star_empty">#E0E0E0</color>
+    <color name="rating_background">#CCCCCC</color>
+
+    <color name="badge_blue">#2196F3</color>
+    <color name="badge_green">#4CAF50</color>
+    <color name="badge_orange">#FF9800</color>
+    <color name="badge_red">#F44336</color>
+    <color name="badge_purple">#9C27B0</color>
+    <color name="badge_teal">#009688</color>
+
+    <color name="divider">#E0E0E0</color>
+    <color name="border">#E0E0E0</color>
+    <color name="border_light">#F5F5F5</color>
+
+    <color name="overlay">#80000000</color>
+    <color name="overlay_light">#40000000</color>
+    <color name="shadow">#1A000000</color>
+
+    <color name="yellow">#FFD700</color>
+    <color name="yellow_dark">#FFC107</color>
+    <color name="yellow_light">#FFFACD</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

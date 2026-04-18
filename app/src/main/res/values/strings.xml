@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Đọc Truyện</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_tu_truyen">Tủ truyện</string>
+    <string name="nav_trang_chu">Trang chủ</string>
+    <string name="nav_xep_hang">Xếp hạng</string>
+    <string name="nav_tai_khoan">Tài khoản</string>
+
+    <!-- Common -->
+    <string name="search_hint">Tìm kiếm truyện...</string>
+    <string name="empty_library">Tủ truyện trống\nThêm truyện yêu thích của bạn!</string>
+
+    <!-- Story Detail -->
+    <string name="add_to_library">Thêm vào tủ truyện</string>
+    <string name="added_to_library">Đã thêm vào tủ</string>
+    <string name="tab_intro">Giới thiệu</string>
+    <string name="tab_reviews">Đánh giá</string>
+    <string name="tab_comments">Bình luận</string>
+    <string name="tab_chapters">DS Chương</string>
+
+    <!-- Auth -->
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="not_logged_in">Chưa đăng nhập</string>
+    <string name="go_to_login">Đã có tài khoản? Đăng nhập</string>
+    <string name="go_to_register">Chưa có tài khoản? Đăng ký</string>
+
+    <!-- Role -->
+    <string name="select_role">Chọn vai trò</string>
+    <string name="role_reader">Độc giả</string>
+    <string name="role_translator">Dịch giả / Người đăng truyện</string>
+    <string name="manage_stories">Quản lý truyện</string>
+    <string name="add_story">Đăng truyện mới</string>
+
+    <!-- Chapter Reading -->
+    <string name="prev_chapter">← Chương trước</string>
+    <string name="next_chapter">Chương sau →</string>
+
+    <!-- Settings -->
+    <string name="change_password">Đổi mật khẩu</string>
+    <string name="settings">Cài đặt</string>
+</resources>

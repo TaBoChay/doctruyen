@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_chapter_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tiêu đề chương"
+        android:inputType="text"
+        android:background="@color/input_bg"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nội dung chương"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btn_pick_chapter_file"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Chọn file .txt"
+        android:textSize="12sp"
+        android:backgroundTint="@color/button_secondary"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_selected_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chưa chọn file"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_chapter_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Nội dung sẽ được đọc từ file..."
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:background="@color/input_bg"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,492 @@
+ {
+"reviews": [
+{
+"id": "review_001",
+"storyId": "story_001",
+"userId": "user_001",
+"userName": "Nguyễn Văn An",
+"rating": 4.5,
+"comment": "Câu chuyện rất cảm động và chân thực. Tác giả viết rất hay về những khó khăn của người dân vùng biên giới."
+},
+{
+"id": "review_002",
+"storyId": "story_001",
+"userId": "user_002",
+"userName": "Trần Thị Hoa",
+"rating": 4.0,
+"comment": "Nội dung hay nhưng có chỗ hơi dài dòng. Nhìn chung vẫn đáng đọc!"
+},
+{
+"id": "review_003",
+"storyId": "story_001",
+"userId": "user_003",
+"userName": "Lê Minh Tuấn",
+"rating": 5.0,
+"comment": "Truyện xuất sắc! Đọc xong thấy thương cảm cho nhân vật chính. 5 sao không phải bàn cãi."
+},
+{
+"id": "review_004",
+"storyId": "story_001",
+"userId": "user_004",
+"userName": "Phạm Thu Hà",
+"rating": 4.0,
+"comment": "Câu chuyện thực tế, nhắc nhở chúng ta về những vấn đề xã hội đáng lo ngại."
+},
+{
+"id": "review_005",
+"storyId": "story_001",
+"userId": "user_005",
+"userName": "Hoàng Minh Khoa",
+"rating": 4.5,
+"comment": "Đọc mà rơi nước mắt. Tác giả viết rất tâm huyết."
+},
+{
+"id": "review_006",
+"storyId": "story_002",
+"userId": "user_006",
+"userName": "Đỗ Văn Long",
+"rating": 5.0,
+"comment": "Thích concept xuyên không + kinh doanh. Rất sáng tạo và logic!"
+},
+{
+"id": "review_007",
+"storyId": "story_002",
+"userId": "user_007",
+"userName": "Vũ Thị Mai",
+"rating": 4.5,
+"comment": "Nhân vật chính thông minh, có chiến lược kinh doanh hay. Đọc học được nhiều thứ."
+},
+{
+"id": "review_008",
+"storyId": "story_002",
+"userId": "user_008",
+"userName": "Bùi Quang Huy",
+"rating": 4.5,
+"comment": "Truyện hay, cân bằng tốt giữa yếu tố huyền huyễn và kinh doanh."
+},
+{
+"id": "review_009",
+"storyId": "story_002",
+"userId": "user_009",
+"userName": "Ngô Thị Lan",
+"rating": 5.0,
+"comment": "Không thể ngừng đọc! Mỗi chương đều hấp dẫn và có plot twist bất ngờ."
+},
+{
+"id": "review_010",
+"storyId": "story_002",
+"userId": "user_010",
+"userName": "Trịnh Văn Phong",
+"rating": 4.0,
+"comment": "Ý tưởng độc đáo, tuy nhiên có vài chi tiết chưa hợp lý lắm."
+},
+{
+"id": "review_011",
+"storyId": "story_003",
+"userId": "user_011",
+"userName": "Lý Thanh Tùng",
+"rating": 5.0,
+"comment": "Là fan bóng đá nên rất thích truyện này. Mô tả các trận đấu rất chân thực!"
+},
+{
+"id": "review_012",
+"storyId": "story_003",
+"userId": "user_012",
+"userName": "Đặng Thị Hương",
+"rating": 4.5,
+"comment": "Truyện truyền cảm hứng mạnh mẽ. Đọc xong thấy muốn cố gắng hơn trong cuộc sống."
+},
+{
+"id": "review_013",
+"storyId": "story_003",
+"userId": "user_013",
+"userName": "Phan Minh Đức",
+"rating": 5.0,
+"comment": "Tuyệt tác! Từng trang sách đều ấn tượng. Recommend 100%!"
+},
+{
+"id": "review_014",
+"storyId": "story_003",
+"userId": "user_014",
+"userName": "Võ Thị Ngọc",
+"rating": 4.5,
+"comment": "Nhân vật có chiều sâu, cốt truyện logic. Đọc rất cuốn!"
+},
+{
+"id": "review_015",
+"storyId": "story_003",
+"userId": "user_015",
+"userName": "Cao Văn Sơn",
+"rating": 5.0,
+"comment": "Best story about football I've ever read! Cảm ơn tác giả!"
+},
+{
+"id": "review_016",
+"storyId": "story_004",
+"userId": "user_016",
+"userName": "Hồ Thị Ánh",
+"rating": 4.5,
+"comment": "Truyện kiếm hiệp hay, nhân vật chính rất thông minh và có tầm nhìn."
+},
+{
+"id": "review_017",
+"storyId": "story_004",
+"userId": "user_017",
+"userName": "Đinh Quang Nam",
+"rating": 4.0,
+"comment": "Cốt truyện phức tạp, nhiều nhân vật. Cần đọc kỹ mới hiểu hết."
+},
+{
+"id": "review_018",
+"storyId": "story_004",
+"userId": "user_018",
+"userName": "Lương Thị Bích",
+"rating": 5.0,
+"comment": "Mê mẩn với thế giới võ lâm trong truyện. Tác giả xây dựng rất công phu!"
+},
+{
+"id": "review_019",
+"storyId": "story_004",
+"userId": "user_019",
+"userName": "Trương Văn Hải",
+"rating": 4.5,
+"comment": "Truyện hay, đọc mãi không chán. Đang chờ update chương mới!"
+},
+{
+"id": "review_020",
+"storyId": "story_004",
+"userId": "user_020",
+"userName": "Phùng Thị Loan",
+"rating": 4.0,
+"comment": "Nội dung tốt nhưng cập nhật hơi chậm. Mong tác giả ra chương nhanh hơn!"
+},
+{
+"id": "review_021",
+"storyId": "story_005",
+"userId": "user_021",
+"userName": "Mai Văn Tâm",
+"rating": 4.5,
+"comment": "Hệ thống tu luyện trong truyện rất chi tiết và logic. Thích!"
+},
+{
+"id": "review_022",
+"storyId": "story_005",
+"userId": "user_022",
+"userName": "Đoàn Thị Thảo",
+"rating": 4.0,
+"comment": "Truyện tu tiên hay, nhưng có đoạn hơi khó hiểu với người mới đọc thể loại này."
+},
+{
+"id": "review_023",
+"storyId": "story_005",
+"userId": "user_023",
+"userName": "Hoàng Văn Dũng",
+"rating": 4.5,
+"comment": "World building tuyệt vời! Đọc như được du hành vào thế giới tu tiên."
+},
+{
+"id": "review_024",
+"storyId": "story_005",
+"userId": "user_024",
+"userName": "Lê Thị Oanh",
+"rating": 5.0,
+"comment": "Fan cứng của thể loại tu tiên và truyện này không làm tôi thất vọng!"
+},
+{
+"id": "review_025",
+"storyId": "story_006",
+"userId": "user_025",
+"userName": "Nguyễn Minh Quân",
+"rating": 4.0,
+"comment": "Truyện kiếm hiệp tình cảm hay. Nhân vật nam lãng mạn và hài hước."
+},
+{
+"id": "review_026",
+"storyId": "story_006",
+"userId": "user_026",
+"userName": "Trần Thị Yến",
+"rating": 4.5,
+"comment": "Các nữ nhân vật đều có cá tính riêng, không sáo rỗng. Thích cách tác giả xây dựng nhân vật!"
+},
+{
+"id": "review_027",
+"storyId": "story_006",
+"userId": "user_027",
+"userName": "Vũ Quang Minh",
+"rating": 4.0,
+"comment": "Cốt truyện lãng mạn, thích hợp đọc giải trí. 4 sao!"
+},
+{
+"id": "review_028",
+"storyId": "story_006",
+"userId": "user_028",
+"userName": "Đỗ Thị Hằng",
+"rating": 4.5,
+"comment": "Truyện hay, đọc thấy thư giãn. Recommend cho ai thích kiếm hiệp tình cảm!"
+},
+{
+"id": "review_029",
+"storyId": "story_007",
+"userId": "user_029",
+"userName": "Phan Văn Thắng",
+"rating": 5.0,
+"comment": "Concept 'ma chủng' rất độc đáo! Chưa từng đọc truyện nào giống vậy."
+},
+{
+"id": "review_030",
+"storyId": "story_007",
+"userId": "user_030",
+"userName": "Lý Thị Thu",
+"rating": 4.5,
+"comment": "Truyện dark fantasy hay, không dành cho người yếu tim. Mô tả rất sống động!"
+},
+{
+"id": "review_031",
+"storyId": "story_007",
+"userId": "user_031",
+"userName": "Bùi Văn Kiên",
+"rating": 4.5,
+"comment": "Hệ thống ma chủng phức tạp nhưng rất thú vị. Đọc mãi không chán!"
+},
+{
+"id": "review_032",
+"storyId": "story_007",
+"userId": "user_032",
+"userName": "Ngô Thị Duyên",
+"rating": 5.0,
+"comment": "Masterpiece! Truyện hay nhất trong thể loại dark fantasy tôi từng đọc."
+},
+{
+"id": "review_033",
+"storyId": "story_008",
+"userId": "user_033",
+"userName": "Trịnh Văn Hùng",
+"rating": 4.5,
+"comment": "Thế giới giấc mơ trong truyện rất kỳ ảo và đẹp. Tác giả có trí tưởng tượng phong phú!"
+},
+{
+"id": "review_034",
+"storyId": "story_008",
+"userId": "user_034",
+"userName": "Cao Thị Linh",
+"rating": 4.5,
+"comment": "Truyện phiêu lưu hay, mỗi chương đều có điều bất ngờ."
+},
+{
+"id": "review_035",
+"storyId": "story_008",
+"userId": "user_035",
+"userName": "Hồ Văn Đức",
+"rating": 4.0,
+"comment": "Concept thú vị, cốt truyện phức tạp. Cần tập trung khi đọc!"
+},
+{
+"id": "review_036",
+"storyId": "story_009",
+"userId": "user_036",
+"userName": "Đinh Thị Mai",
+"rating": 5.0,
+"comment": "Là foodie nên mê mẩn với truyện này! Mô tả món ăn rất hấp dẫn."
+},
+{
+"id": "review_037",
+"storyId": "story_009",
+"userId": "user_037",
+"userName": "Lương Văn Toàn",
+"rating": 4.5,
+"comment": "Kết hợp tu tiên và ẩm thực rất sáng tạo. Đọc xong đói bụng!"
+},
+{
+"id": "review_038",
+"storyId": "story_009",
+"userId": "user_038",
+"userName": "Trương Thị Hoa",
+"rating": 4.5,
+"comment": "Truyện nhẹ nhàng, vui vẻ. Thích hợp đọc để thư giãn!"
+},
+{
+"id": "review_039",
+"storyId": "story_009",
+"userId": "user_039",
+"userName": "Phùng Văn Hiếu",
+"rating": 5.0,
+"comment": "Unique concept! Chưa từng đọc truyện tu tiên nào như vậy. Love it!"
+},
+{
+"id": "review_040",
+"storyId": "story_010",
+"userId": "user_040",
+"userName": "Mai Thị Trang",
+"rating": 4.0,
+"comment": "Truyện chiến tranh viết rất chân thực. Tôn trọng những người lính!"
+},
+{
+"id": "review_041",
+"storyId": "story_010",
+"userId": "user_041",
+"userName": "Đoàn Văn Bình",
+"rating": 4.5,
+"comment": "Mô tả chiến trận rất chi tiết. Cảm động với tinh thần yêu nước!"
+},
+{
+"id": "review_042",
+"storyId": "story_010",
+"userId": "user_042",
+"userName": "Hoàng Thị Ngân",
+"rating": 4.5,
+"comment": "Truyện hay, giáo dục ý nghĩa lịch sử. Nên đọc!"
+},
+{
+"id": "review_043",
+"storyId": "story_011",
+"userId": "user_043",
+"userName": "Lê Văn Phúc",
+"rating": 4.5,
+"comment": "Câu chuyện truyền cảm hứng! Nhân vật chính rất kiên trì và nỗ lực."
+},
+{
+"id": "review_044",
+"storyId": "story_011",
+"userId": "user_044",
+"userName": "Nguyễn Thị Phương",
+"rating": 4.0,
+"comment": "Truyện hay nhưng hơi cliché. Vẫn đáng đọc!"
+},
+{
+"id": "review_045",
+"storyId": "story_011",
+"userId": "user_045",
+"userName": "Trần Văn Đạt",
+"rating": 4.5,
+"comment": "Động lực để theo đuổi ước mơ! Cảm ơn tác giả đã viết truyện này."
+},
+{
+"id": "review_046",
+"storyId": "story_012",
+"userId": "user_046",
+"userName": "Vũ Thị Huyền",
+"rating": 5.0,
+"comment": "Kết hợp kiếm hiệp và tu tiên rất hay! Main character OP nhưng không chán."
+},
+{
+"id": "review_047",
+"storyId": "story_012",
+"userId": "user_047",
+"userName": "Đỗ Văn Thành",
+"rating": 4.5,
+"comment": "Truyện dài nhưng không nhàm. Mỗi arc đều hấp dẫn!"
+},
+{
+"id": "review_048",
+"storyId": "story_012",
+"userId": "user_048",
+"userName": "Phan Thị Nhung",
+"rating": 4.5,
+"comment": "Đang follow từ đầu, chưa lúc nào thất vọng. Highly recommend!"
+},
+{
+"id": "review_049",
+"storyId": "story_013",
+"userId": "user_049",
+"userName": "Lý Văn Hùng",
+"rating": 5.0,
+"comment": "Top 1 truyện tu tiên hay nhất! Hệ thống tu luyện logic và phức tạp."
+},
+{
+"id": "review_050",
+"storyId": "story_013",
+"userId": "user_050",
+"userName": "Bùi Thị Lan",
+"rating": 5.0,
+"comment": "Nghiện truyện này! Đọc mãi không thấy chán. Tác giả thiên tài!"
+},
+{
+"id": "review_051",
+"storyId": "story_013",
+"userId": "user_051",
+"userName": "Ngô Văn Tuấn",
+"rating": 4.5,
+"comment": "Nhân vật chính có personality rõ ràng. Cốt truyện logic và hấp dẫn!"
+},
+{
+"id": "review_052",
+"storyId": "story_013",
+"userId": "user_052",
+"userName": "Trịnh Thị Nga",
+"rating": 5.0,
+"comment": "Masterpiece! Không có gì để chê. Perfect 10/10!"
+},
+{
+"id": "review_053",
+"storyId": "story_014",
+"userId": "user_053",
+"userName": "Cao Văn Nghĩa",
+"rating": 4.5,
+"comment": "Trọng sinh + kinh doanh rất hay. Nhân vật chính thông minh và có tầm nhìn!"
+},
+{
+"id": "review_054",
+"storyId": "story_014",
+"userId": "user_054",
+"userName": "Hồ Thị Tuyết",
+"rating": 4.5,
+"comment": "Kịch bản chặt chẽ, logic. Học được nhiều kiến thức kinh doanh!"
+},
+{
+"id": "review_055",
+"storyId": "story_014",
+"userId": "user_055",
+"userName": "Đinh Văn Lâm",
+"rating": 5.0,
+"comment": "Excellent! Đọc như xem phim Hollywood. Can't stop reading!"
+},
+{
+"id": "review_056",
+"storyId": "story_015",
+"userId": "user_056",
+"userName": "Lương Thị Thảo",
+"rating": 4.5,
+"comment": "Từ nghề nhỏ lên đế chế, rất truyền cảm hứng. Nhân vật chính down to earth!"
+},
+{
+"id": "review_057",
+"storyId": "story_015",
+"userId": "user_057",
+"userName": "Trương Văn Khải",
+"rating": 4.0,
+"comment": "Câu chuyện khởi nghiệp hay, thực tế. Đáng học hỏi!"
+},
+{
+"id": "review_058",
+"storyId": "story_015",
+"userId": "user_058",
+"userName": "Phùng Thị Hồng",
+"rating": 4.5,
+"comment": "Nội dung sát với thực tế Việt Nam. Tác giả hiểu rõ về kinh doanh!"
+},
+{
+"id": "review_059",
+"storyId": "story_016",
+"userId": "user_059",
+"userName": "Mai Văn Đức",
+"rating": 5.0,
+"comment": "Lịch sử Việt Nam + xuyên không = tuyệt vời! Rất tự hào dân tộc mình!"
+},
+{
+"id": "review_060",
+"storyId": "story_016",
+"userId": "user_060",
+"userName": "Đoàn Thị Vân",
+"rating": 4.5,
+"comment": "Truyện hay, có giá trị giáo dục lịch sử. Recommend cho mọi người!"
+},
+{
+"id": "review_061",
+"storyId": "story_016",
+"userId": "user_061",
+"userName": "Hoàng Văn Thắng",
+"rating": 4.5,
+"comment": "Tác giả research lịch sử rất kỹ. Đọc vừa giải trí vừa học được kiến thức!"
+}
+]
+}

@@ -1,0 +1,8 @@
+{
+  "provider": {
+    "openrouter": {
+      "env": ["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"]
+    }
+  },
+  "model": "openrouter/qwen/qwen-3.6-plus"
+}

@@ -1,0 +1,480 @@
+ {
+"comments": [
+{
+"id": "comment_001",
+"storyId": "story_001",
+"userId": "user_001",
+"userName": "Nguyễn Văn An",
+"content": "Chapter mới khi nào ra vậy tác giả?"
+},
+{
+"id": "comment_002",
+"storyId": "story_001",
+"userId": "user_002",
+"userName": "Trần Thị Bích",
+"content": "Nhân vật chính quá tội nghiệp, mong sẽ có happy ending!"
+},
+{
+"id": "comment_003",
+"storyId": "story_001",
+"userId": "user_003",
+"userName": "Lê Minh Châu",
+"content": "Ai đọc đến chapter 30 chưa? Cảnh đó shock quá!"
+},
+{
+"id": "comment_004",
+"storyId": "story_001",
+"userId": "user_004",
+"userName": "Phạm Thu Dung",
+"content": "Truyện này đọc mà rơi nước mắt, quá cảm động!"
+},
+{
+"id": "comment_005",
+"storyId": "story_001",
+"userId": "user_005",
+"userName": "Hoàng Minh Khôi",
+"content": "Tác giả viết hay lắm, chờ tiếp nè!"
+},
+{
+"id": "comment_006",
+"storyId": "story_002",
+"userId": "user_006",
+"userName": "Đỗ Văn Long",
+"content": "Main character quá OP, có gì đều làm được 😂"
+},
+{
+"id": "comment_007",
+"storyId": "story_002",
+"userId": "user_007",
+"userName": "Vũ Thị Mai",
+"content": "Hệ thống ma pháp + kinh doanh rất độc đáo!"
+},
+{
+"id": "comment_008",
+"storyId": "story_002",
+"userId": "user_008",
+"userName": "Bùi Quang Huy",
+"content": "Chapter 50 plot twist điên rồ! Ai đọc rồi chưa?"
+},
+{
+"id": "comment_009",
+"storyId": "story_002",
+"userId": "user_009",
+"userName": "Ngô Thị Lan",
+"content": "Nghiện truyện này quá, đọc mãi không dứt được!"
+},
+{
+"id": "comment_010",
+"storyId": "story_002",
+"userId": "user_010",
+"userName": "Trịnh Văn Phong",
+"content": "Tác giả update nhanh quá, thích lắm!"
+},
+{
+"id": "comment_011",
+"storyId": "story_003",
+"userId": "user_011",
+"userName": "Lý Thanh Tùng",
+"content": "Mô tả trận đấu rất chi tiết, như thật vậy!"
+},
+{
+"id": "comment_012",
+"storyId": "story_003",
+"userId": "user_012",
+"userName": "Đặng Thị Hương",
+"content": "Nhân vật chính từ vô danh lên đỉnh cao, quá inspirational!"
+},
+{
+"id": "comment_013",
+"storyId": "story_003",
+"userId": "user_013",
+"userName": "Phan Minh Đức",
+"content": "Best sports novel ever! Không thể ngừng đọc!"
+},
+{
+"id": "comment_014",
+"storyId": "story_003",
+"userId": "user_014",
+"userName": "Võ Thị Ngọc",
+"content": "Đọc xong thấy muốn đi tập bóng đá luôn 😄"
+},
+{
+"id": "comment_015",
+"storyId": "story_003",
+"userId": "user_015",
+"userName": "Cao Văn Sơn",
+"content": "Khi nào có movie adaptation nhỉ? Quá hay!"
+},
+{
+"id": "comment_016",
+"storyId": "story_004",
+"userId": "user_016",
+"userName": "Hồ Thị Ánh",
+"content": "Giả vương mà thông minh hơn vua thật 😂"
+},
+{
+"id": "comment_017",
+"storyId": "story_004",
+"userId": "user_017",
+"userName": "Đinh Quang Nam",
+"content": "Plot quá phức tạp, đọc phải tập trung mới hiểu hết!"
+},
+{
+"id": "comment_018",
+"storyId": "story_004",
+"userId": "user_018",
+"userName": "Lương Thị Bích",
+"content": "Thế giới võ lâm trong truyện rất chi tiết và logic!"
+},
+{
+"id": "comment_019",
+"storyId": "story_004",
+"userId": "user_019",
+"userName": "Trương Văn Hải",
+"content": "Chờ update tiếp, arc này đang hay lắm!"
+},
+{
+"id": "comment_020",
+"storyId": "story_004",
+"userId": "user_020",
+"userName": "Phùng Thị Loan",
+"content": "Mong tác giả cập nhật nhanh hơn chút!"
+},
+{
+"id": "comment_021",
+"storyId": "story_005",
+"userId": "user_021",
+"userName": "Mai Văn Tâm",
+"content": "Hệ thống tu luyện phức tạp nhưng rất logic!"
+},
+{
+"id": "comment_022",
+"storyId": "story_005",
+"userId": "user_022",
+"userName": "Đoàn Thị Thảo",
+"content": "Mới bắt đầu đọc thể loại tu tiên, truyện này dễ hiểu không các bạn?"
+},
+{
+"id": "comment_023",
+"storyId": "story_005",
+"userId": "user_023",
+"userName": "Hoàng Văn Dũng",
+"content": "World building tuyệt vời! Đọc như được du hành vào thế giới khác."
+},
+{
+"id": "comment_024",
+"storyId": "story_005",
+"userId": "user_024",
+"userName": "Lê Thị Oanh",
+"content": "Fan cứng của thể loại này và không thất vọng!"
+},
+{
+"id": "comment_025",
+"storyId": "story_006",
+"userId": "user_025",
+"userName": "Nguyễn Minh Quân",
+"content": "Lãng tử + mỹ nữ = công thức hoàn hảo! 😍"
+},
+{
+"id": "comment_026",
+"storyId": "story_006",
+"userId": "user_026",
+"userName": "Trần Thị Yến",
+"content": "Các nữ nhân vật đều có tính cách riêng, không giống nhau!"
+},
+{
+"id": "comment_027",
+"storyId": "story_006",
+"userId": "user_027",
+"userName": "Vũ Quang Minh",
+"content": "Đọc giải trí tốt, không cần suy nghĩ nhiều!"
+},
+{
+"id": "comment_028",
+"storyId": "story_006",
+"userId": "user_028",
+"userName": "Đỗ Thị Hằng",
+"content": "Ship main với ai đây mọi người? 😄"
+},
+{
+"id": "comment_029",
+"storyId": "story_007",
+"userId": "user_029",
+"userName": "Phan Văn Thắng",
+"content": "Concept ma chủng độc đáo nhất từ trước đến nay!"
+},
+{
+"id": "comment_030",
+"storyId": "story_007",
+"userId": "user_030",
+"userName": "Lý Thị Thu",
+"content": "Dark fantasy chuẩn, không dành cho người yếu tim!"
+},
+{
+"id": "comment_031",
+"storyId": "story_007",
+"userId": "user_031",
+"userName": "Bùi Văn Kiên",
+"content": "Mỗi loại ma chủng đều có đặc tính riêng, rất sáng tạo!"
+},
+{
+"id": "comment_032",
+"storyId": "story_007",
+"userId": "user_032",
+"userName": "Ngô Thị Duyên",
+"content": "Masterpiece! Top 1 trong thể loại dark fantasy!"
+},
+{
+"id": "comment_033",
+"storyId": "story_008",
+"userId": "user_033",
+"userName": "Trịnh Văn Hùng",
+"content": "Thế giới giấc mơ đẹp mà cũng nguy hiểm!"
+},
+{
+"id": "comment_034",
+"storyId": "story_008",
+"userId": "user_034",
+"userName": "Cao Thị Linh",
+"content": "Mỗi arc đều có twist bất ngờ, không đoán được!"
+},
+{
+"id": "comment_035",
+"storyId": "story_008",
+"userId": "user_035",
+"userName": "Hồ Văn Đức",
+"content": "Phải tập trung đọc mới hiểu hết nội dung!"
+},
+{
+"id": "comment_036",
+"storyId": "story_008",
+"userId": "user_036",
+"userName": "Đinh Thị Mai",
+"content": "Plot twist chapter 60 điên rồ!"
+},
+{
+"id": "comment_037",
+"storyId": "story_009",
+"userId": "user_037",
+"userName": "Lương Văn Toàn",
+"content": "Đọc xong đói bụng, mô tả món ăn quá ngon! 🤤"
+},
+{
+"id": "comment_038",
+"storyId": "story_009",
+"userId": "user_038",
+"userName": "Trương Thị Hoa",
+"content": "Tu tiên + ẩm thực = combo hoàn hảo!"
+},
+{
+"id": "comment_039",
+"storyId": "story_009",
+"userId": "user_039",
+"userName": "Phùng Văn Hiếu",
+"content": "Main dùng món ăn để thu phục cao nhân, quá hay!"
+},
+{
+"id": "comment_040",
+"storyId": "story_009",
+"userId": "user_040",
+"userName": "Mai Thị Trang",
+"content": "Foodie + tu tiên fan phải đọc truyện này!"
+},
+{
+"id": "comment_041",
+"storyId": "story_010",
+"userId": "user_041",
+"userName": "Đoàn Văn Bình",
+"content": "Truyện chiến tranh viết rất chân thực và xúc động!"
+},
+{
+"id": "comment_042",
+"storyId": "story_010",
+"userId": "user_042",
+"userName": "Hoàng Thị Ngân",
+"content": "Tôn trọng những người lính đã hy sinh!"
+},
+{
+"id": "comment_043",
+"storyId": "story_010",
+"userId": "user_043",
+"userName": "Lê Văn Phúc",
+"content": "Mô tả chiến trận rất chi tiết, như có mặt ở đó!"
+},
+{
+"id": "comment_044",
+"storyId": "story_010",
+"userId": "user_044",
+"userName": "Nguyễn Thị Phương",
+"content": "Đọc xong thấy trân trọng hòa bình hơn!"
+},
+{
+"id": "comment_045",
+"storyId": "story_011",
+"userId": "user_045",
+"userName": "Trần Văn Đạt",
+"content": "Câu chuyện truyền cảm hứng mạnh mẽ!"
+},
+{
+"id": "comment_046",
+"storyId": "story_011",
+"userId": "user_046",
+"userName": "Vũ Thị Huyền",
+"content": "Main character rất kiên trì, đáng học hỏi!"
+},
+{
+"id": "comment_047",
+"storyId": "story_011",
+"userId": "user_047",
+"userName": "Đỗ Văn Thành",
+"content": "Đọc xong thấy muốn nỗ lực theo đuổi ước mơ!"
+},
+{
+"id": "comment_048",
+"storyId": "story_011",
+"userId": "user_048",
+"userName": "Phan Thị Nhung",
+"content": "Showbiz trong truyện rất thực tế!"
+},
+{
+"id": "comment_049",
+"storyId": "story_012",
+"userId": "user_049",
+"userName": "Lý Văn Hùng",
+"content": "Kết hợp kiếm hiệp + tu tiên rất hay!"
+},
+{
+"id": "comment_050",
+"storyId": "story_012",
+"userId": "user_050",
+"userName": "Bùi Thị Lan",
+"content": "Main OP nhưng không chán, vẫn có thử thách!"
+},
+{
+"id": "comment_051",
+"storyId": "story_012",
+"userId": "user_051",
+"userName": "Ngô Văn Tuấn",
+"content": "Truyện dài 189 chapter mà không nhàm chán!"
+},
+{
+"id": "comment_052",
+"storyId": "story_012",
+"userId": "user_052",
+"userName": "Trịnh Thị Nga",
+"content": "Chờ arc mới, current arc đang hay lắm!"
+},
+{
+"id": "comment_053",
+"storyId": "story_013",
+"userId": "user_053",
+"userName": "Cao Văn Nghĩa",
+"content": "Top 1 truyện tu tiên hay nhất từ trước đến nay!"
+},
+{
+"id": "comment_054",
+"storyId": "story_013",
+"userId": "user_054",
+"userName": "Hồ Thị Tuyết",
+"content": "Nghiện truyện này quá! Chapter nào cũng xuất sắc!"
+},
+{
+"id": "comment_055",
+"storyId": "story_013",
+"userId": "user_055",
+"userName": "Đinh Văn Lâm",
+"content": "Hệ thống tu luyện phức tạp và logic nhất!"
+},
+{
+"id": "comment_056",
+"storyId": "story_013",
+"userId": "user_056",
+"userName": "Lương Thị Thảo",
+"content": "Masterpiece! Tác giả là thiên tài!"
+},
+{
+"id": "comment_057",
+"storyId": "story_014",
+"userId": "user_057",
+"userName": "Trương Văn Khải",
+"content": "Trọng sinh về 2019, ước gì mình cũng được vậy! 😄"
+},
+{
+"id": "comment_058",
+"storyId": "story_014",
+"userId": "user_058",
+"userName": "Phùng Thị Hồng",
+"content": "Main dùng kiến thức tương lai rất thông minh!"
+},
+{
+"id": "comment_059",
+"storyId": "story_014",
+"userId": "user_059",
+"userName": "Mai Văn Đức",
+"content": "Kịch bản chặt chẽ, không có plot hole!"
+},
+{
+"id": "comment_060",
+"storyId": "story_014",
+"userId": "user_060",
+"userName": "Đoàn Thị Vân",
+"content": "Học được nhiều kiến thức kinh doanh từ truyện!"
+},
+{
+"id": "comment_061",
+"storyId": "story_015",
+"userId": "user_061",
+"userName": "Hoàng Văn Thắng",
+"content": "Từ bán thịt lợn lên đế chế, quá inspirational!"
+},
+{
+"id": "comment_062",
+"storyId": "story_015",
+"userId": "user_062",
+"userName": "Lý Thị Kim",
+"content": "Main down to earth, không kiêu ngạo dù giàu!"
+},
+{
+"id": "comment_063",
+"storyId": "story_015",
+"userId": "user_063",
+"userName": "Bùi Văn Tùng",
+"content": "Câu chuyện khởi nghiệp rất thực tế!"
+},
+{
+"id": "comment_064",
+"storyId": "story_015",
+"userId": "user_064",
+"userName": "Ngô Thị Hà",
+"content": "Tác giả hiểu rõ về thị trường Việt Nam!"
+},
+{
+"id": "comment_065",
+"storyId": "story_016",
+"userId": "user_065",
+"userName": "Trịnh Văn Long",
+"content": "Lịch sử Việt Nam + xuyên không = perfect!"
+},
+{
+"id": "comment_066",
+"storyId": "story_016",
+"userId": "user_066",
+"userName": "Cao Thị Ngọc",
+"content": "Đọc vừa giải trí vừa học được lịch sử!"
+},
+{
+"id": "comment_067",
+"storyId": "story_016",
+"userId": "user_067",
+"userName": "Hồ Văn Minh",
+"content": "Tác giả research lịch sử rất kỹ càng!"
+},
+{
+"id": "comment_068",
+"storyId": "story_016",
+"userId": "user_068",
+"userName": "Đinh Thị Hương",
+"content": "Tự hào về lịch sử dân tộc mình! ❤️"
+}
+]
+}
