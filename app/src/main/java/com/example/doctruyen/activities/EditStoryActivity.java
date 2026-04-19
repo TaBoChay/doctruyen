@@ -469,6 +469,37 @@ public class EditStoryActivity extends AppCompatActivity {
         etAuthor.setText(editingStory.getAuthor());
         etDescription.setText(editingStory.getDescription());
         etFolderName.setText(editingStory.getFolderName());
+        etFolderName.setEnabled(false); // Do not allow changing folder name
+        
+        String bannerPath = editingStory.getBannerImagePath();
+        long bannerLastModified = 0;
+        if (bannerPath != null && bannerPath.startsWith("file:")) {
+            bannerLastModified = new java.io.File(bannerPath.substring(5)).lastModified();
+        }
+        Uri bannerUri = (bannerPath != null && bannerPath.startsWith("file:")) ? 
+                Uri.parse(bannerPath) : Uri.parse("file:///android_asset/" + bannerPath);
+
+        com.bumptech.glide.Glide.with(this)
+                .load(bannerUri)
+                .signature(new com.bumptech.glide.signature.ObjectKey(String.valueOf(bannerLastModified)))
+                .placeholder(R.drawable.ic_book_default)
+                .error(R.drawable.ic_book_default)
+                .into(ivBanner);
+
+        String coverPath = editingStory.getCoverImagePath();
+        long coverLastModified = 0;
+        if (coverPath != null && coverPath.startsWith("file:")) {
+            coverLastModified = new java.io.File(coverPath.substring(5)).lastModified();
+        }
+        Uri coverUri = (coverPath != null && coverPath.startsWith("file:")) ? 
+                Uri.parse(coverPath) : Uri.parse("file:///android_asset/" + coverPath);
+
+        com.bumptech.glide.Glide.with(this)
+                .load(coverUri)
+                .signature(new com.bumptech.glide.signature.ObjectKey(String.valueOf(coverLastModified)))
+                .placeholder(R.drawable.ic_book_default)
+                .error(R.drawable.ic_book_default)
+                .into(ivCover);
         
         // Set category
         String[] categories = {"Tiên Hiệp", "Ngôn Tình", "Kiếm Hiệp", "Kỳ Ảo", "Trinh Thám", "Huyền Huyễn", "Võng Du", "Đô Thị", "Khác"};

@@ -99,14 +99,32 @@ public class StoryDetailActivity extends AppCompatActivity implements OnDataSubm
         tvDescription.setText(story.getDescription());
         ratingBar.setRating(story.getRating());
 
-        Glide.with(this)
-                .load(Uri.parse("file:///android_asset/" + story.getBannerImagePath()))
+        String bannerPath = story.getBannerImagePath();
+        long bannerLastModified = 0;
+        if (bannerPath != null && bannerPath.startsWith("file:")) {
+            bannerLastModified = new java.io.File(bannerPath.substring(5)).lastModified();
+        }
+        Uri bannerUri = (bannerPath != null && bannerPath.startsWith("file:")) ? 
+                Uri.parse(bannerPath) : Uri.parse("file:///android_asset/" + bannerPath);
+
+        com.bumptech.glide.Glide.with(this)
+                .load(bannerUri)
+                .signature(new com.bumptech.glide.signature.ObjectKey(String.valueOf(bannerLastModified)))
                 .placeholder(R.drawable.ic_book_default)
                 .error(R.drawable.ic_book_default)
                 .into(ivBanner);
 
-        Glide.with(this)
-                .load(Uri.parse("file:///android_asset/" + story.getCoverImagePath()))
+        String coverPath = story.getCoverImagePath();
+        long coverLastModified = 0;
+        if (coverPath != null && coverPath.startsWith("file:")) {
+            coverLastModified = new java.io.File(coverPath.substring(5)).lastModified();
+        }
+        Uri coverUri = (coverPath != null && coverPath.startsWith("file:")) ? 
+                Uri.parse(coverPath) : Uri.parse("file:///android_asset/" + coverPath);
+
+        com.bumptech.glide.Glide.with(this)
+                .load(coverUri)
+                .signature(new com.bumptech.glide.signature.ObjectKey(String.valueOf(coverLastModified)))
                 .placeholder(R.drawable.ic_book_default)
                 .error(R.drawable.ic_book_default)
                 .into(ivCover);

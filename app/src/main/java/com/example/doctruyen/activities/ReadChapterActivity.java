@@ -19,6 +19,15 @@ import com.example.doctruyen.adapters.ChapterListAdapter;
 import com.example.doctruyen.models.Chapter;
 import com.example.doctruyen.utils.StoryManager;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+import android.app.AlertDialog;
+import android.widget.Button;
+import android.widget.EditText;
+
+import com.example.doctruyen.models.Comment;
+import com.example.doctruyen.utils.SharedPrefsHelper;
+import com.example.doctruyen.adapters.CommentAdapter;
 
 public class ReadChapterActivity extends AppCompatActivity {
 
@@ -32,7 +41,12 @@ public class ReadChapterActivity extends AppCompatActivity {
     private int currentPosition;
     private String storyTitle;
     private String storyId;
-private PopupWindow chapterPopupWindow;
+    private PopupWindow chapterPopupWindow;
+    
+    private Button btnAddChapterComment;
+    private RecyclerView rvChapterComments;
+    private ArrayList<Comment> chapterComments;
+    private CommentAdapter commentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +75,14 @@ private PopupWindow chapterPopupWindow;
         ivBack = findViewById(R.id.iv_back);
         ivMenu = findViewById(R.id.iv_menu);
         scrollView = findViewById(R.id.scroll_view);
+        
+        btnAddChapterComment = findViewById(R.id.btn_add_chapter_comment);
+        rvChapterComments = findViewById(R.id.rv_chapter_comments);
+        
+        chapterComments = new ArrayList<>();
+        commentAdapter = new CommentAdapter(this, chapterComments);
+        rvChapterComments.setLayoutManager(new LinearLayoutManager(this));
+        rvChapterComments.setAdapter(commentAdapter);
     }
 
     private void loadChapter() {
@@ -75,6 +97,15 @@ private PopupWindow chapterPopupWindow;
                 currentChapter.getId(),
                 currentChapter.getStoryId()
         );
+
+        StoryManager.getInstance(this).getChapterComments(currentChapter.getId(), new StoryManager.CommentCallback() {
+            @Override
+            public void onCommentsLoaded(List<Comment> comments) {
+                chapterComments.clear();
+                chapterComments.addAll(comments);
+                commentAdapter.notifyDataSetChanged();
+            }
+        });
 
         scrollView.post(() -> {
             scrollView.scrollTo(0, 0);
@@ -110,16 +141,54 @@ private PopupWindow chapterPopupWindow;
                 loadChapter();
                 updateNavigationButtons();
             }
-});
+        });
         
         btnReload.setOnClickListener(v -> loadChapter());
         
-        btnComments.setOnClickListener(v -> {
-            Intent intent = new Intent(this, StoryDetailActivity.class);
-            intent.putExtra("story_id", storyId);
-            intent.putExtra("tab", "comments");
-            startActivity(intent);
-        });
+        btnComments.setOnClickListener(v -> showAddCommentDialog());
+        
+        btnAddChapterComment.setOnClickListener(v -> showAddCommentDialog());
+    }
+
+    private void showAddCommentDialog() {
+        SharedPrefsHelper prefs = SharedPrefsHelper.getInstance(this);
+        if (!prefs.isLoggedIn()) {
+            Toast.makeText(this, "Vui lòng đăng nhập để bình luận", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        View dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_comment, null);
+        EditText etComment = dialogView.findViewById(R.id.et_comment_content);
+
+        new AlertDialog.Builder(this)
+                .setView(dialogView)
+                .setPositiveButton("Gửi", (dialog, which) -> {
+                    String content = etComment.getText().toString().trim();
+                    if (!content.isEmpty()) {
+                        String commentId = UUID.randomUUID().toString();
+                        String userId = prefs.getLoggedInEmail();
+                        String userName = prefs.getUserName();
+
+                        Comment newComment = new Comment(
+                                commentId,
+                                currentChapter.getId(),
+                                userId,
+                                userName,
+                                content
+                        );
+
+                        StoryManager.getInstance(this).addChapterComment(newComment);
+                        
+                        chapterComments.add(0, newComment);
+                        commentAdapter.notifyDataSetChanged();
+
+                        Toast.makeText(this, "Đã thêm bình luận", Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(this, "Nội dung bình luận không được để trống", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .setNegativeButton("Hủy", null)
+                .show();
     }
     
     private void updateNavigationButtons() {
@@ -159,9 +228,6 @@ private PopupWindow chapterPopupWindow;
         chapterPopupWindow.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_popup, getTheme()));
         chapterPopupWindow.setOutsideTouchable(true);
         
-        int[] location = new int[2];
-        ivMenu.getLocationOnScreen(location);
-        int popupY = location[1] + location[1] - maxPopupHeight;
-        chapterPopupWindow.showAtLocation(ivMenu, android.view.Gravity.NO_GRAVITY, location[0] - 200, popupY);
+        chapterPopupWindow.showAsDropDown(ivMenu, -200, 0);
     }
 }

@@ -69,14 +69,58 @@
         android:layout_weight="1"
         android:padding="16dp">
 
-        <TextView
-            android:id="@+id/tv_content"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nội dung chương"
-            android:textColor="@color/text_primary"
-            android:textSize="16sp"
-            android:lineSpacingExtra="6dp" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nội dung chương"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bình luận chương"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/btn_add_chapter_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Viết bình luận..."
+                android:textColor="@color/text_secondary"
+                android:backgroundTint="@color/input_bg"
+                android:gravity="start|center_vertical"
+                android:paddingStart="16dp"
+                android:minHeight="48dp"
+                android:drawableStart="@drawable/ic_comment"
+                android:drawablePadding="8dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="16dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_chapter_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
 
     </ScrollView>
 

@@ -190,8 +190,17 @@ public class ManageStoriesActivity extends AppCompatActivity implements
     }
 
     private void deleteSelectedStories() {
-        // TODO: Implement story deletion functionality
-        Toast.makeText(this, "Chức năng xóa truyện sẽ được triển khai trong phiên bản tiếp theo.", Toast.LENGTH_LONG).show();
+        java.util.List<Story> selectedStories = adapter.getSelectedStories();
+        int deletedCount = 0;
+        
+        for (Story story : selectedStories) {
+            boolean success = storyManager.deleteLocalStory(story.getId());
+            if (success) {
+                deletedCount++;
+            }
+        }
+        
+        Toast.makeText(this, "Đã xóa " + deletedCount + " truyện.", Toast.LENGTH_LONG).show();
         exitMultiSelectMode();
         loadTranslatorStories();
     }
